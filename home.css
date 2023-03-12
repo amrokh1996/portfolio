@@ -1,10 +1,10 @@
 .margin-nav-link{
-    margin-left:30% ;
+    margin-left:18% ;
 }
 .nav-link-effect:hover{
-    font-size:larger;
+    /* font-size:larger; */
     color: green;
-    transition: 0.1s;
+    transition: 1s;
     background-color: rgb(11, 116, 39);
    
 }
@@ -12,10 +12,19 @@ li a{
     letter-spacing: .2rem;
 }
 
+.a-letter{
+    animation: animate-a infinite 3s; 
+    animation-direction: alternate;
+    
+}
+@keyframes animate-a{
+    from{color: rgb(11, 116, 39);}
+    to{color: rgb(140, 246, 165);}
+}
+
  .job-text:before{
-  
         content: "_Electrical Engineer_";
-        animation: animate infinite 8s;
+        animation: animate infinite 7s;
         padding-left: 10px;
         letter-spacing: 0.41rem;   
     }
@@ -38,9 +47,7 @@ li a{
         }
         100% {
             content: "_Full Stack Developer_";
-            letter-spacing: 0.1rem;
-           
-            
+            letter-spacing: 0.1rem; 
         }
     }
     .contact-image{
@@ -53,14 +60,12 @@ li a{
 }
 .exp-ul li{
 line-height: 2rem;
-
 }
 .card-bg{
     background-color: rgb(220, 220, 220);
 }
-
 .section1{
-    background-image:  url(Images/hero.jpg);
+    background-image:  url(Images/bgimages.jpg);
     height: 100%;
     width: 100%;
     background-size: cover;
@@ -68,35 +73,108 @@ line-height: 2rem;
  }
 
  .HeroSection{
-    background-color:rgba(0, 0, 0, 0.822);
+    background-color:rgba(0, 0, 0, 0.765);
     padding: 10%;
     line-height: 0.1rem;
-    
  }
+
  .card-hover {
     transition: transform 0.8s;
   }
-  
- .card-hover:hover{
-    border: 0.1rem red solid;
-    transform:scale(1.1);
-background-color: white;
 
- }
-
- .div-animation-right{
-    position: absolute;
-    left: -30%;
-    animation: move 5s linear 5s infinite;
- };
- @keyframes move {
-    from {
-      left: -30%;
-    }
-    to {
-      left: 100%;
-    }
+  div .card-body p{
+    display: none;
+    transition-duration: 2s;
+    lighting-color: azure;
   }
+
+  div .card-body:hover >p{
+    display: block;
+    transition-duration: 5s;
+  }
+  .column-scale:hover >div{
+    background-color: #fefefe;
+  }
+  
+  /* div .card-body p::before{
+transform:scale(1.2);
+display: bl;
+
+ } */
+ .resume .resume-title {
+    font-size: 26px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #050d18;
+  }
+  
+  .resume .resume-item {
+    padding: 0 0 20px 20px;
+    margin-top: -2px;
+    border-left: 2px solid #1f5297;
+    position: relative;
+  }
+  
+  .resume .resume-item h4 {
+    line-height: 18px;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #050d18;
+    margin-bottom: 10px;
+  }
+  
+  .resume .resume-item h5 {
+    font-size: 16px;
+    background: #e4edf9;
+    padding: 5px 15px;
+    display: inline-block;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .resume .resume-item ul {
+    padding-left: 20px;
+  }
+  
+  .resume .resume-item ul li {
+    padding-bottom: 10px;
+  }
+  
+  .resume .resume-item:last-child {
+    padding-bottom: 0;
+  }
+  
+  .resume .resume-item::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+    left: -9px;
+    top: 0;
+    background: #fff;
+    border: 2px solid #1f5297;
+  }
+  .skills-div{
+    overflow-y: scroll;
+    height: 30rem;
+    width: 17rem;
+  }
+  .card-hover-text:hover > p {
+    display: block;
+  }
+  .icon{
+    height: 4rem;
+    width: 4rem;
+    margin: 0.5rem;
+  }
+  #contact .card:hover i,#contact .card:hover h4{
+	color: #87d37c;
+}
+
+
 
  
 

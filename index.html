@@ -9,11 +9,14 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
   <link rel="stylesheet" href="home.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+  
 </head>
 
 <body>
-  <header class="navbar-fixed-top bg-black " style="position: fixed;">
-    <nav class="navbar navbar-expand-lg bg-black navbar-fixed-top" style="position: fixed;width: 100%;">
+  <header class="navbar-fixed-top bg-black " style="position: fixed;z-index: 2;">
+    <nav class="navbar navbar-expand-lg bg-black navbar-fixed-top" style="position: fixed;width: 100%;;z-index: 200px;">
       <div class="container-fluid border-bottom-0-success">
         <p class="tab-content fs-3 fw-bolder text-success  fst-italic ">Amro Alkhazaleh</p>
         <button class="navbar-toggler bg-success" type="button" data-bs-toggle="collapse"
@@ -46,8 +49,7 @@
     <div class="section1">
       <section class="jumbotron HeroSection text-center vh-100" id="homeSection">
         <div class="container pt-5">
-          <h1 class="jumbotron-heading mt-5  text-success fw-bolder align-items-center hero-text  display-1">Amro
-            Alkhazaleh</h1>
+          <h1 class="jumbotron-heading mt-5  text-success fw-bolder align-items-center hero-text  display-1" data-aos="zoom-in" data-aos-duration="3000"><span class="a-letter">Amro Alkhazaleh</span></h1>
           <p class="jumbotron-heading mt-5 fs-1 text-light align-items-center job-text mb-5 "></p>
           <p>
             <a href="#aboutSection"> <button
@@ -61,37 +63,32 @@
 
     <section id="aboutSection">
       <div class="container mw-100 ">
-        <div class="section-title">
-          <span class="d-flex justify-content-center fw-bolder fs-1"
-            style="color: rgb(207, 206, 206); letter-spacing: 0.5rem;">ABOUT ME</span>
-          <h2 class="text-success d-flex justify-content-center fw-bolder fs-2"
-            style="position: relative;top: -2rem;margin-bottom: -2.5rem;">ABOUT ME</h2>
-          <hr>
-        </div>
-        <div class="row card-bg">
-          <div class="col-3 bg-black  border-4 border-success rounded-5">
-            <div class="card text-white bg-black mb-3 mw-100 pt-5 mt-5">
+
+        <div class="row bg-black pb-3">
+          <div class="col-3 bg-black">
+            <div class="card text-white bg-black mb-1 mw-100 pt-5">
               <div class="card-header text-center"><img src="Images/amropro.png" class="rounded-circle h-75 w-75"
-                  alt="profile Image"> </div>
+                  alt="profile Image" data-aos="zoom-in" data-aos-duration="3000"> </div>
               <div class="card-body">
-                <hr class="text-success">
+                <!-- <hr class="text-success">
                 <h5 class="card-title  d-flex justify-content-center">P E R S O N A L P R O F I L E</h5>
                 <p class="card-text">
                 <ul class="list-group list-group-flush rounded-5">
                   <li class="list-group-item ">Place of birth : Almafraq</li>
                   <li class="list-group-item">Date of birth : 23/4/1996</li>
                   <li class="list-group-item">Nationality : Jordanian</li>
-                  <li class="list-group-item">Social status : single</li>
                 </ul>
-                </p>
+                </p> -->
                 <hr>
                 <h5 class="card-title  d-flex justify-content-center">C O N T A C T</h5>
                 <p class="card-text">
-                <ul class="list-group list-group-flush rounded-5">
+                <ul class="list-group list-group-flush rounded-3">
                   <li class="list-group-item"><img src="Images/location.png" class="rounded-5 contact-image"
-                      alt="location imge">Amman-jordan</li>
+                      alt="location imge">Almafraq-jordan</li>
                   <li class="list-group-item"><img src="Images/phone.jpg" class="rounded-5 contact-image "
                       alt="location imge">0789308028</li>
+                      <li class="list-group-item"><img src="Images/phone.jpg" class="rounded-5 contact-image "
+                        alt="location imge">0772511542</li>
                   <li class="list-group-item"><img src="Images/email.png" class="rounded-5 contact-image"
                       alt="location imge">amrrrrkh1996@gmail.com</li>
 
@@ -101,12 +98,75 @@
             </div>
           </div>
           <div class="col ps-5 pe-5 pt-5 rounded-5 bg-light">
+            <div class="section-title">
+              <span class="d-flex justify-content-center fw-bolder fs-1 shadow"
+                style="color: rgb(0, 0, 0); letter-spacing: 0.5rem;text-shadow: 0.5rem;" data-aos="zoom-in" data-aos-duration="1500">ABOUT ME</span>
+              <!-- <h2 class="text-dark d-flex justify-content-center fw-bolder fs-2"
+                style="position: relative;top: -2rem;margin-bottom: -2.5rem;" data-aos="zoom-in" data-aos-duration="1500">ABOUT ME</h2> -->
+              <hr>
+            </div>
             <div class="row">
-              <div class="col-lg-6 aos-init aos-animate" data-aos="fade-up">
+              <div id="Education" class="resume bg-light ">
+                <div class="container ">
+                  <div class="row m-0">
+
+                    <div class="col-lg-6" data-aos="zoom-in-right" data-aos-duration="1000">
+                      <h3 class="resume-title text-success">E D U C A T I O N</h3>
+                      <div class="resume-item">
+                        <h4>Bachelor of Electrical Engineering</h4>
+                        <h5><i>FROM 2014 TO 2019</i> </h5>
+                        <p text-primary fw-bold>holds a Bachelor's degree in Electrical Power Engineering with a grade of very good, with a
+                          <b>GPA</b> of 3.16</p>
+                      </div>
+            
+                      <div class="resume-item">
+                        <h4>Intern at Orange Coding Academy</h4>
+                        <h5><i>from 2/2023 TO 8/2023</i></h5>
+            
+                        <p text-warning fw-bold orange>Training on developing websites at the Orange Academy for a 6 months</p>
+                      </div>
+
+                      <h3 class="resume-title text-success">E X P E R I E N C E</h3>
+                      <div class="resume-item">
+                        <h4>Software Developer</h4>
+                        <h5>FROM 4/2022 TO 9/2022</h5>
+                        <p>Training for Jovision company as a software developer for 6 months </p>
+                      </div>
+                    </div>
+                    <div class="col-lg-1">
+
+                    </div>
+                    <div class="col-lg" data-aos="zoom-in-left" data-aos-duration="1000">
+                      
+                      <div class="container gap-3 pB-5" style="border-bottom:1px green solid;border-left:1px green solid;border-right:1px green solid;border-radius: 1rem;">
+                        <h3 class="resume-title text-success d-flex justify-content-center"><u>T E C H N O L O G I E S</u></h3>
+                        <div class="row">
+                        <div class="col"><img class="icon" src="Images/htmlicon.jpg" alt="html icon"></div>
+                        <div class="col"><img class="icon" src="Images/cssiconjpg.jpg" alt="css icon"></div>
+                        <div class="col"><img class="icon" src="Images/koticon.jpg" alt="kotlin icon"></div>
+                      </div>
+                      <div class="row">
+                        <div class="col"><img class="icon" src="Images/jsicon.png" alt="js icon"></div>
+                        <div class="col"><img class="icon" src="Images/bootstrapicon.png" alt="bootstrap icon"></div>
+                        <div class="col"><img class="icon" src="Images/xamarin.png" alt="xamarin icon"></div>
+                      </div>
+                      <div class="row">
+                        <div class="col"><img class="icon" src="Images/mysqlicon.png" alt="mysql icon"></div>
+                        <div class="col"><img class="icon" src="Images/firebase.jpg" alt="firebase icon"></div>
+                        <div class="col"><img class="icon" src="Images/reacticon.png" alt="react  icon"></div>
+                      </div>
+                    </div>
+
+                    </div>
+            
+                  </div>
+                </div>
+              </div>
+              <!-- <div class="col-lg-6 aos-init aos-animate" data-aos="zoom-in-right" data-aos-duration="2000">
                 <h3 class="resume-title text-bg-success rounded-top-5 ps-2 d-flex justify-content-center"><i>E D U C A T
                     I O N</i></h3>
                 <div class="border card-bg border-success p-3 rounded-2 ">
-                  <div class="resume-item">
+                  <div class="resume-item mt-2">
                     <h4>Bachelor of Electrical Engineering</h4>
                     <h6><u>2014 - 2019</u></h6>
 
@@ -117,28 +177,22 @@
 
                   <hr>
 
-                  <div class="resume-item">
+                  <div class="resume-item mt-5">
                     <h4>High School Education</h4>
                     <h6><u>2010 - 2014</u></h6>
                     <p><em> Prince Al Hussein bin Abdullah School,Almafraq</em></p>
                     <p>He holds a high school diploma in the scientific stream, with a GPA of 89.1%</p>
                   </div>
                   <hr>
-                </div>
-                <div class="resume-item mt-5">
-                  <h3 class="resume-title text-bg-success rounded-top-5 ps-2 d-flex justify-content-center"><i>E X P E R
-                      I E N C E</i></h3>
-                  <div class="border card-bg border-success ps-3 pe-3 pb-3 rounded-2">
-                    <ul class="mt-3 list-group list-group-flush exp-ul">
-                      <li class="list-group-item">Worked for Jovision as a software developer for 6months</li>
-                      <li class="list-group-item">Training in developing websites at the Orange Academy for a 6 months
-                      </li>
-                    </ul>
+                  <div class="resume-item mt-5 mb-5">
+                    <h4>full stack developer training</h4>
+                    <h6><u>2023/2-2023/8</u></h6>
+                    <p><em> Orange Academy</em></p>
+                    <p>Training on developing websites at the Orange Academy for a 6 months</p>
                   </div>
                 </div>
-
               </div>
-              <div class="col-lg-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+              <div class="col-lg-6 aos-init aos-animate" data-aos="zoom-in-left" data-aos-duration="2000">
                 <h3 class="resume-title text-bg-success rounded-top-5 ps-2 d-flex justify-content-center"><i>C O M P U T
                     E R S K I L L S</i></h3>
                 <div class="border card-bg border-success ps-3 pe-3 pb-3 rounded-2 mb-3">
@@ -159,77 +213,82 @@
                   </div>
                 </div>
 
-              </div>
+              </div> -->
             </div>
           </div>
 
         </div>
     </section>
 
-    <section id="portfolio">
-      <div class="container" style="width: 70%;">
+    <section id="portfolio" class=" bg-black pb-5">
+      <hr>
+      <div class="section-title ">
+        <span class="d-flex justify-content-center fw-bolder fs-1 shadow"
+          style="color: rgb(236, 234, 234); letter-spacing: 0.5rem;" data-aos="zoom-in" data-aos-duration="1500">P R O J E C T S</span>
+        <!-- <h2 class="text-success d-flex justify-content-center fw-bolder fs-1"
+          style="position: relative;top: -3.2rem;margin-bottom: -2.5rem; letter-spacing: 0.5rem; " data-aos="zoom-in" data-aos-duration="1500">PORTFOLIO</h2> -->
         <hr>
-        <div class="section-title">
-          <span class="d-flex justify-content-center fw-bolder fs-1"
-            style="color: rgb(207, 206, 206); letter-spacing: 0.5rem;">PORTFOLIO</span>
-          <h2 class="text-success d-flex justify-content-center fw-bolder fs-2"
-            style="position: relative;top: -2rem;margin-bottom: -2.5rem;">PORTFOLIO</h2>
-          <hr>
-        </div>
+      </div>
+      <div>
+        <div>
+      <div class="container p-5 bg-light" style="width: 70%; border: 0.1rem rgb(0, 0, 0) solid;border-radius: 1rem;box-shadow: 2rem black snow;">        
         <div class="row mb-5">
-          <div class="col">
-            <div class="card card-bg border-2 border-success card-hover">
+          <div class="col column-scale">
+            <div class="card card-bg border-2 border-success card-hover hovercard shadow"  data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="1000" >
               <div class="view overlay">
                 <img class="card-img-top" src="Images/mrmandoob.jpg" alt="Card image cap">
                 <a>
                   <div class="mask rgba-white-slight"></div>
                 </a>
               </div>
-              <div class="card-body">
-                <h4 class="card-title">Mr Mandoob system</h4>
+              <div class="card-body d-flex justify-content-center flex-column">
+                <h4 class="card-title">Mr Mandoob sys.</h4>
                 <hr>
-                <p class="card-text">The desktop program for the billing management system of Mr. Mandoob , and it is the current system approved by the company.</p>
+                <p class="card-text ss" >The desktop program for the billing management system of Mr. Mandoob , and it is the current system approved by the company.</p>
                 <button
-                  class="btn btn-outline-success fs-5 text align-items-center mt-2 rounded-4 border-1 d-flex text-center "
-                  type="submit">Read more</button>
+                  class="btn  btn-outline-secondary text-light mt-2 ms-3 me-3 rounded-4   bg-success" type="submit">view details</button>
               </div>
             </div>
           </div>
           <div class="col">
-            <div class="card card-bg border-2 border-success">
+            <div class="card card-bg border-2 border-success" data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="1000">
               <div class="view overlay">
                 <img class="card-img-top" src="Images/drive.jpg" alt="Card image cap">
                 <a>
                   <div class="mask rgba-white-slight"></div>
                 </a>
               </div>
-              <div class="card-body">
+              <div class="card-body d-flex justify-content-center flex-column">
                 <h4 class="card-title">Drive test App</h4>
                 <hr>
                 <p class="card-text">An application that contains a set of questions to test users' theoretical
                   knowledge of driving. It is available in the Android version on Google Play.</p>
-                <button
-                  class="btn btn-outline-success fs-5 text align-items-center mt-2 rounded-4 border-1 d-flex text-center "
-                  type="submit">Read more</button>
+                  <button
+                  class="btn  btn-outline-secondary text-light mt-2 ms-3 me-3 rounded-4   bg-success" type="submit">view details</button>
               </div>
             </div>
           </div>
           <div class="col">
-            <div class="card card-bg border-2 border-success">
+            <div class="card card-bg border-2 border-success" data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="1000">
               <div class="view overlay">
                 <img class="card-img-top" src="Images/leveltest.jpg" alt="Card image cap">
                 <a>
                   <div class="mask rgba-white-slight"></div>
                 </a>
               </div>
-              <div class="card-body">
+              <div class="card-body d-flex justify-content-center flex-column">
                 <h4 class="card-title">level test App</h4>
                 <hr>
                 <p class="card-text">An application that contains a set of questions to test the level (Arabic and
                   English and computer) for users, available in the Android version on Google Play.</p>
-                <button
-                  class="btn btn-outline-success fs-5 text align-items-center mt-2 rounded-4 border-1 d-flex text-center "
-                  type="submit">Read more</button>
+                  <button
+                  class="btn  btn-outline-secondary text-light mt-2 ms-3 me-3 rounded-4   bg-success" type="submit">view details</button>
               </div>
             </div>
           </div>
@@ -237,66 +296,71 @@
 
         <div class="row">
           <div class="col">
-            <div class="card card-bg border-2 border-success">
+            <div class="card card-bg border-2 border-success" data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="1000">
               <div class="view overlay">
                 <img class="card-img-top" src="Images/wazeftak.jpg" alt="Card image cap">
                 <a>
                   <div class="mask rgba-white-slight"></div>
                 </a>
               </div>
-              <div class="card-body">
+              <div class="card-body d-flex justify-content-center flex-column">
                 <h4 class="card-title">تطبيق وظيفتك</h4>
                 <hr>
                 <p class="card-text">An application that contains a daily renewed collection of job advertisements in
                   Jordan and Saudi Arabia, available in the Android version on Google Play.</p>
-                <button
-                  class="btn btn-outline-success fs-5 text align-items-center mt-2 rounded-4 border-1 d-flex text-center "
-                  type="submit">Read more</button>
+                  <button
+                  class="btn  btn-outline-secondary text-light mt-2 ms-3 me-3 rounded-4   bg-success" type="submit">view details</button>
               </div>
             </div>
           </div>
           <div class="col ">
-            <div class="card card-bg border-2 border-success">
+            <div class="card card-bg border-2 border-success" data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="1000">
               <div class="view overlay">
                 <img class="card-img-top h-50 mw-100" src="Images/iq.jpg" alt="Card image cap">
                 <a>
                   <div class="mask rgba-white-slight"></div>
                 </a>
               </div>
-              <div class="card-body">
+              <div class="card-body d-flex justify-content-center flex-column">
                 <h4 class="card-title">IQ test App</h4>
                 <hr>
                 <p class="card-text mb-5">An application that contains a set of questions to test the intelligence of
                   users, available Android version on Google Play.</p>
-                <button
-                  class="btn btn-outline-success fs-5 text align-items-center mt-1 rounded-4 border-1 d-flex text-center "
-                  type="submit">Read more</button>
+                  <button
+                  class="btn  btn-outline-secondary text-light mt-2 ms-3 me-3 rounded-4   bg-success" type="submit">view details</button>
               </div>
             </div>
           </div>
           <div class="col">
-            <div class="card card-bg border-2 border-success">
+            <div class="card card-bg border-2 border-success" data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="1000">
               <div class="view overlay">
                 <img class="card-img-top" src="Images/rewaiat.jpg" alt="Card image cap">
                 <a>
                   <div class="mask rgba-white-slight"></div>
                 </a>
               </div>
-              <div class="card-body">
+              <div class="card-body d-flex justify-content-center flex-column">
                 <h4 class="card-title">rewaiat App</h4>
                 <hr>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
                   card's
                   content.</p>
-                <button
-                  class="btn btn-outline-success fs-5 text align-items-center mt-5 rounded-4 border-1 d-flex text-center "
-                  type="submit">Read more</button>
+                  <button
+                  class="btn  btn-outline-secondary text-light mt-2 ms-3 me-3 rounded-4   bg-success" type="submit">view details</button>
               </div>
             </div>
           </div>
         </div>
 
       </div>
+    </div>
+    </div>
 
     </section>
 
@@ -304,108 +368,85 @@
     <HR>
     </HR>
     <span class="d-flex justify-content-center fw-bolder fs-1"
-      style="color: rgb(207, 206, 206); letter-spacing: 0.5rem;">CONTACT</span>
-    <h2 class="text-success d-flex justify-content-center fw-bolder fs-2"
-      style="position: relative;top: -2rem;margin-bottom: -2.5rem;">CONTACT</h2>
+      style="color: rgb(4, 4, 4); letter-spacing: 0.5rem;" data-aos="zoom-in" data-aos-duration="1500">CONTACT</span>
+    <!-- <h2 class="text-dark d-flex justify-content-center fw-bolder fs-2"
+      style="position: relative;top: -2rem;margin-bottom: -2.5rem;" data-aos="zoom-in" data-aos-duration="1500">CONTACT</h2> -->
     <hr>
-    <section id="contact" class="contact card-bg">
-      <div class="wrapper">
-        <div class="row no-gutters">
-          <div class="col-lg-8 col-md-7 order-md-last d-flex align-items-stretch">
-            <div class="contact-wrap w-100 p-md-5 p-4">
-              <h3 class="mb-4">Get in touch</h3>
-              <div id="form-message-warning" class="mb-4"></div>
-              <div id="form-message-success" class="mb-4">
-                Your message was sent, thank you!
-              </div>
-              <form method="POST" id="contactForm" name="contactForm" class="contactForm" novalidate="novalidate">
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="form-group">
-                      <label class="label" for="name">Full Name</label>
-                      <input type="text" class="form-control" name="name" id="name" placeholder="Name">
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="form-group">
-                      <label class="label" for="email">Email Address</label>
-                      <input type="email" class="form-control" name="email" id="email" placeholder="Email">
-                    </div>
-                  </div>
-                  <div class="col-md-12">
-                    <div class="form-group">
-                      <label class="label" for="subject">Subject</label>
-                      <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject">
-                    </div>
-                  </div>
-                  <div class="col-md-12">
-                    <div class="form-group">
-                      <label class="label" for="#">Message</label>
-                      <textarea name="message" class="form-control" id="message" cols="30" rows="4"
-                        placeholder="Message"></textarea>
-                    </div>
-                  </div>
-                  <div class="col-md-12">
-                    <div class="form-group">
-                      <input type="submit" value="Send Message" class="btn btn-primary bg-success">
-                      <div class="submitting"></div>
-                    </div>
-                  </div>
-                </div>
-              </form>
+    <!-- <section id="contact" class="contact card-bg" style="background-image: url(Images/nordwood-themes-q8U1YgBaRQk-unsplash.jpg); background-size: cover;">
+      <div style="background-color: rgba(5, 5, 5, 0.543);">
+
+
+    </div>
+    </section> -->
+
+    <section id="contact">
+      <div class="container">
+          <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-3 my-5">
+              <div class="card border-0">
+                 <div class="card-body text-center">
+                   <i class="fa fa-phone fa-5x mb-3" aria-hidden="true"></i>
+                   <h4 class="text-uppercase mb-5">Call me</h4>
+                   <p><a class="text-dark" href="tel://+962 789 308 028">+962
+                    789 308 028</a></p>
+                 </div>
+               </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3 my-5">
+              <div class="card border-0">
+                 <div class="card-body text-center">
+                   <i class="fa fa-map-marker fa-5x mb-3" aria-hidden="true"></i>
+                   <h4 class="text-uppercase mb-5">Address</h4>
+                  <address>Jordan-almafraq</address>
+                 </div>
+               </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3 my-5">
+              <div class="card border-0">
+                 <div class="card-body text-center">
+                   <i class="fa fa-linkedin fa-5x mb-3" aria-hidden="true"></i>
+                   <h4 class="text-uppercase mb-5">Linkedin</h4>
+                   <address><a class="text-black" href="https://www.linkedin.com/in/amro-alkhazaleh-3097b9219/">Amro Alkhazaleh</a></address>
+                 </div>
+               </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3 my-5">
+              <div class="card border-0">
+                 <div class="card-body text-center">
+                   <i class="fa fa-globe fa-5x mb-3" aria-hidden="true"></i>
+                   <h4 class="text-uppercase mb-5">Email</h4>
+                   <p><a class="text-black"
+                    href="mailto:amrrrkh1996@gmail.com">amrrrkh1996@gmail.com</a></p>
+                 </div>
+               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-5 d-flex align-items-stretch">
-            <div class="info-wrap bg-black w-100 p-md-5 p-4 rounded-end-5">
-              <h3 class="text-success">Let's get in touch</h3>
-              <p class="mb-4 text-success">We're open for any suggestion or just to have a chat</p>
-              <div class="dbox w-100 d-flex align-items-start">
-                <div class="icon d-flex align-items-center justify-content-center">
-                  <span class="fa fa-map-marker"></span>
-                </div>
-                <div class="text pl-3">
-                  <p class="text-light"><span class="text-success">Address:</span> jordan-almafraq</p>
-                </div>
-              </div>
-              <div class="dbox w-100 d-flex align-items-center">
-                <div class="icon d-flex align-items-center justify-content-center">
-                  <span class="fa fa-phone"></span>
-                </div>
-                <div class="text pl-3">
-                  <p class="text-success"><span>Phone:</span> <a class="text-light" href="tel://+962 789 308 028">+962
-                      789 308 028</a></p>
-                </div>
-              </div>
-              <div class="dbox w-100 d-flex align-items-center">
-                <div class="icon d-flex align-items-center justify-content-center">
-                  <span class="fa fa-paper-plane"></span>
-                </div>
-                <div class="text pl-3">
-                  <p class="text-success"><span>Email:</span> <a class="text-light"
-                      href="mailto:amrrrkh1996@gmail.com">amrrrkh1996@gmail.com</a></p>
-                </div>
-              </div>
-              <div class="dbox w-100 d-flex align-items-center">
-                <div class="icon d-flex align-items-center justify-content-center">
-                  <span class="fa fa-globe"></span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
-    </section>
+   </section>
 
 
 
 
   </main>
-  <footer>
-
+  <footer class="bg-light text-center text-lg-start">
+    <!-- Copyright -->
+    <div class="text-center text-light p-3" style="background-color: rgb(0, 0, 0);">
+      © 2020 Copyright:
+      <a class="text-light" href="">Amro Alkhazaleh</a>
+    </div>
+    <!-- Copyright -->
   </footer>
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-P7JSYB1CSP"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
     crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
 </body>
 
 </html>
