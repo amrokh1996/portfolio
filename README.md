@@ -14,12 +14,7 @@ In this project, I designed and created a portfolio containing my personal infor
 + CSS
 + Bootstrap
 ---
-> ### `ScreenShots:`
 
-+ ![alt text](Image/Image1.png)
-+ ![alt text](Image/Image2.png)
-+ ![alt text](Image/Image3.png)
----
 > ### `My portfolio Link:`
 + [portfolio github URL](https://amrokh1996.github.io/portfolio/)
 + [wirefram and mockup link](https://www.figma.com/file/JcWy2y3ZFjlVGtFFfLRsLX/portfolio?node-id=0%3A1&t=a5fJd3dAgtuAmfRQ-0)
