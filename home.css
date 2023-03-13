@@ -1,10 +1,9 @@
+
 .margin-nav-link {
   margin-left: 28%;
 }
 
 .nav-link-effect:hover {
-  /* font-size:larger; */
-  color: green;
   transition: 1s;
   background-color: rgb(11, 116, 39);
 
@@ -41,7 +40,7 @@ li a {
 
   30% {
     content: "Electrical Engineer";
-    letter-spacing: 0.4rem;
+    letter-spacing: 0.3rem;
   }
 
   60% {
@@ -83,7 +82,7 @@ li a {
 }
 
 .HeroSection {
-  background-color: rgba(0, 0, 0, 0.765);
+  background-color: rgba(0, 0, 0, 0.66);
   padding: 10%;
   line-height: 0.1rem;
 }
@@ -195,3 +194,5 @@ display: bl;
     display: none;
   }
 }
+
+
