@@ -23,7 +23,7 @@ li a{
 }
 
  .job-text:before{
-        content: "_Electrical Engineer_";
+        content: "Electrical Engineer";
         animation: animate infinite 7s;
         padding-left: 10px;
         letter-spacing: 0.41rem;   
@@ -31,28 +31,23 @@ li a{
     
     @keyframes animate {
   
-        25% {
-            content: "_Electrical Engineer_";
+        30% {
+            content: "Electrical Engineer";
             letter-spacing: 0.4rem;
         }
-        50% {
-            content: "_Freelancer_";
-            letter-spacing: 0.3rem;
-            
-        }
-        75% {
-            content: "_Mobile Developer_";
+        60% {
+            content: "Mobile Developer";
             letter-spacing: 0.2rem;
         
         }
         100% {
-            content: "_Full Stack Developer_";
+            content: "Full Stack Developer";
             letter-spacing: 0.1rem; 
         }
     }
     .contact-image{
-        height: 12%;
-        width: 12%;
+        height: 1.8rem;
+        width: 1.8rem;
     }
 .exp-ul{
     border-top-right-radius: 3rem;
@@ -90,7 +85,7 @@ line-height: 2rem;
 
   div .card-body:hover >p{
     display: block;
-    transition-duration: 5s;
+    transition: 5s;
   }
   .column-scale:hover >div{
     background-color: #fefefe;
@@ -172,6 +167,12 @@ display: bl;
   }
   #contact .card:hover i,#contact .card:hover h4{
 	color: #87d37c;
+}
+
+@media only screen and (max-width: 800px) {
+  .hide-section {
+    display: none;
+  }
 }
 
 
