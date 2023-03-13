@@ -178,6 +178,16 @@ display: bl;
   display: block;
 } */
 
+.hero-button{
+  font-weight: bolder;border: 0.3rem rgb(86, 186, 101) solid;color:rgb(86, 186, 101) ;
+}
+
+.card-image{
+  filter: blur(3px);
+ 
+
+}
+
 .icon {
   height: 4rem;
   width: 4rem;
@@ -191,6 +201,9 @@ display: bl;
 
 @media only screen and (max-width: 800px) {
   .hide-section {
+    display: none;
+  }
+  .tech-section{
     display: none;
   }
 }

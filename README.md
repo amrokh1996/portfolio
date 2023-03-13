@@ -16,5 +16,5 @@ In this project, I designed and created a portfolio containing my personal infor
 ---
 
 > ### `My portfolio Link:`
-+ [portfolio github URL](https://amrokh1996.github.io/portfolio/)
++ [live link](https://amrokh1996.github.io/portfolio/)
 + [wirefram and mockup link](https://www.figma.com/file/JcWy2y3ZFjlVGtFFfLRsLX/portfolio?node-id=0%3A1&t=a5fJd3dAgtuAmfRQ-0)
