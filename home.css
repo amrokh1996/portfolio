@@ -22,10 +22,12 @@ li a {
 @keyframes animate-a {
   from {
     color: rgb(11, 116, 39);
+
   }
 
   to {
     color: rgb(140, 246, 165);
+    filter:brightness(2)
   }
 }
 
@@ -33,14 +35,14 @@ li a {
   content: "Electrical Engineer";
   animation: animate infinite 7s;
   padding-left: 10px;
-  letter-spacing: 0.41rem;
+
 }
 
 @keyframes animate {
 
   30% {
     content: "Electrical Engineer";
-    letter-spacing: 0.3rem;
+    letter-spacing: 0.2rem;
   }
 
   60% {
@@ -91,7 +93,7 @@ li a {
   transition: transform 0.8s;
 } */
 
-div .card-body p {
+/* div .card-body p {
   display: none;
   transition-duration: 2s;
   lighting-color: azure;
@@ -100,7 +102,7 @@ div .card-body p {
 div .card-body:hover>p {
   display: block;
   transition: 5s;
-}
+} */
 
 /* .column-scale:hover>div {
   background-color: #fefefe;
@@ -183,11 +185,12 @@ display: bl;
 }
 
 .card-image{
-  filter: blur(3px);
- 
-
+filter:opacity(10)
 }
-
+.card-image:hover{
+  filter: blur(0px);
+  transition: 1s;
+}
 .icon {
   height: 4rem;
   width: 4rem;
@@ -221,6 +224,7 @@ display: bl;
 .container-card .card:hover
 {
     height: 450px;
+    background-color: #ffffff78;
 }
 .container-card .card .imgContainer
 {
