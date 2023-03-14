@@ -215,16 +215,18 @@ filter:opacity(10)
 .container-card .card
 {
     max-width: 300px;
+    box-shadow: 0 5px 20px rgba(255, 255, 255, 0.463);
     height: 215px;
     margin: 30px 10px;
     padding: 20px 15px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+    
+    background-color: #0000003a;
     transition: 0.3s ease-in-out;
 }
 .container-card .card:hover
 {
     height: 450px;
-    background-color: #ffffff78;
+    background-color: #ffffffbb;
 }
 .container-card .card .imgContainer
 {
